@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="defender.js"></script>
+<link href="defender.css" rel="stylesheet">
+
+<style>
+.screen {
+    display: inline-block;
+    position: relative;
+    background-color: #000;
+    width: 800px;
+    height: 200px;
+}
+.screen .sprite {
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+    var wrap = {
+        timeline: {ox: 0, oy: 0, 
+            el_deets: $("#defender_score")[0]
+            //points: [],
+        },
+        _active: true
+    };
+    var defender = Object.create(Defender);
+    defender.init(wrap);
+    defender.start();
+});
+</script>
+</head>
+
+<body>
+<div align="center">
+<br>wave <span id="defender_wave"></span>&nbsp;score <span id="defender_score"></span><br>
+<div id="defender_screen" class="screen timeline">
+    <div id="defender" class="sprite"></div>
+</div>
+</div>
+</body>
+
+</html>

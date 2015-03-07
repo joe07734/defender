@@ -1,0 +1,73 @@
+.screen span.defender {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0px 0px;
+}
+
+.screen span.defender.ship {
+    background-image: url(ship.png);
+    width: 30px;
+    height: 12px;
+}
+
+.screen span.defender.flame {
+    background-image: url(flame.png);
+    width: 16px;
+    height: 10px;
+}
+
+.screen span.defender.human {
+    background-image: url(human.png);
+    width: 6px;
+    height: 16px;
+}
+
+.screen span.defender.lander {
+    background-image: url(lander.png);
+    width: 18px;
+    height: 16px;
+}
+
+.screen span.defender.mutant {
+    background-image: url(mutant.png);
+    width: 18px;
+    height: 16px;
+}
+
+.screen span.defender.five-hundred {
+    background-image: url(500.png);
+    width: 22px;
+    height: 10px;
+}
+
+.screen span.defender.two-fifty {
+    background-image: url(250.png);
+    width: 22px;
+    height: 10px;
+}
+
+.screen span.defender.shot {
+    background-color: #F00000;
+    width: 200px;
+    height: 1px;
+}
+
+.screen span.defender.flash {
+    background-color: white;
+    width: 1000px;
+    height: 1000px;
+    z-index: 1000;
+}
+
+.screen span.defender.ship-fragment {
+    background-color: #ff536d;
+    width: 4px;
+    height: 4px;
+}
+
+.screen span.defender.num-ship {
+    background-color: #4040C0;
+    width: 8px;
+    height: 4px;
+}
